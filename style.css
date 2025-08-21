@@ -7,45 +7,115 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 .content {
     width: 100%;
-    height: 100dvh;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* flex-direction: column; */
 }
 
-.message {
-    text-align: center;
+section {
+    min-height: 100dvh;
 }
 
-.github {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 85%;
+a {
     text-decoration: none;
-    cursor: pointer;
-    color: aliceblue;
+    color: black;
+}
+
+#main {
+    /* background: #E0BBE4; */
+    background-image: url(opezdal.jpg);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#html {
+    /* background: #FEC8D8; */
+    background-image: url(glup.webp);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+#browser {
+    /* background: #E0BBE4; */
+    background-image: url(headphones.jpg);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.desc {
+    margin-left: 15rem;
+}
+
+.desc p {
+    max-width: 700px;
+    font-size: 25px;
+    margin-left: 1rem;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    gap: 1em;
+    background: rgb(210, 145, 188, .5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.top a {
+    font-weight: 500;
+}
+
+.fuckyou {
+    width: 100%;
+    min-height: 100dvh;
+    display: none;
     background: black;
-    padding: .2em .4em;
-    border-radius: .5em;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.github:hover {
-    /* color: black; */
-    background: gray;
-}
-
-@media (max-width: 500px) {
-    .image {
-        width: calc(495px/2);
-        height: calc(504px/2);
+@media (max-width: 1024px) {
+    .desc {
+        margin-left: 5rem;
     }
-    .github {
-        top: 80%;
+}
+
+@media (max-width: 768px) {
+    .desc p {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    .content {
+        display: none;
+    }
+    .fuckyou {
+        display: flex;
     }
 }
