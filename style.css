@@ -22,9 +22,30 @@
     text-align: center;
 }
 
+.github {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 85%;
+    text-decoration: none;
+    cursor: pointer;
+    color: aliceblue;
+    background: black;
+    padding: .2em .4em;
+    border-radius: .5em;
+}
+
+.github:hover {
+    /* color: black; */
+    background: gray;
+}
+
 @media (max-width: 500px) {
     .image {
         width: calc(495px/2);
         height: calc(504px/2);
+    }
+    .github {
+        top: 80%;
     }
 }
