@@ -66,6 +66,16 @@ a {
     margin-left: 1rem;
 }
 
+.button {
+    background: black;
+    color: aliceblue;
+    padding: .7em;
+    border-radius: 1em;
+    margin-left: 1rem;
+    position: relative;
+    top: 15px;
+}
+
 .title {
     font-size: 60px;
     font-weight: 600;
@@ -99,7 +109,7 @@ a {
     flex-direction: column;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .desc {
         margin-left: 5rem;
     }
